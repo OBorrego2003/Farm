@@ -22,12 +22,12 @@ const servicios: Servicio[] = [
   {
     icono: 'fas fa-pills',
     titulo: 'Dispensación de Medicamentos',
-    descripcion: 'Medicamentos con y sin receta médica.',
+    descripcion: 'Medicamentos con receta y de venta libre.',
   },
   {
     icono: 'fas fa-user-md',
     titulo: 'Atención Personalizada',
-    descripcion: 'Asesoría sobre uso correcto de medicamentos.',
+    descripcion: 'Atencón y servicio al cliente de primera calidad con amplio catálogo de productos dispensación del surtido de recetas medicas.',
   },
   {
     icono: 'fas fa-heartbeat',
@@ -36,7 +36,7 @@ const servicios: Servicio[] = [
   },
   {
     icono: 'fas fa-syringe',
-    titulo: 'Aplicación de Inyecciones o Vacunas',
+    titulo: 'Aplicación de Inyecciones',
     descripcion: 'Aplicación de medicamentos inyectables.',
   },
   {

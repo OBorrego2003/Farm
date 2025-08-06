@@ -31,4 +31,11 @@ export default defineComponent({
 main {
   padding: 2rem;
 }
+
+</style>
+
+<style>
+body {
+  margin: 0;
+}
 </style>

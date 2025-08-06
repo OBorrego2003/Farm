@@ -9,7 +9,7 @@
         Farmacia Márquez ha servido a la comunidad por más de 4 años, comprometidos con la salud y el bienestar de nuestros clientes.
       </p>
       <p>
-        Nuestro equipo de farmacéuticos altamente calificados está siempre dispuesto a ofrecerte el mejor consejo y atención personalizada.
+        Nuestro equipo de farmacéuticos altamente calificados está siempre dispuesto a ofrecerte alta gama de catálogo y atención personalizada.
       </p>
       <p>
         Creemos en un enfoque integral de la salud, combinando la dispensación de medicamentos con servicios de prevención y educación para una vida más sana.

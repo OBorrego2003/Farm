@@ -5,7 +5,9 @@
       <p><strong>Dirección:</strong> Nogal Americano 193, Rincón de los Nogales</p>
       <p><strong>Horario:</strong></p>
       <ul>
-        <li>Lunes a Domingo: 9:00 - 22:00</li>
+        <li>Lunes a Sabado: 9:00 am - 22:00 pm</li>
+        <li>Domingo: 10:00 am - 17:00 pm</li>
+
       </ul>
       <p>27054 Torreón, Coah.</p>
     </div>

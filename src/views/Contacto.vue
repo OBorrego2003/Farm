@@ -34,6 +34,8 @@ const contactos: Contacto[] = [
   {
     titulo: 'Teléfono',
     detalle: '+52 871 937 7782',
+    link: 'tel:+528719377782',
+    linkTexto: 'Llamar',
   },
   {
     titulo: 'Correo Electrónico',
@@ -91,9 +93,10 @@ const contactos: Contacto[] = [
 .contacto-link {
   display: inline-block;
   margin-top: 0.5rem;
-  color: #005187;
-  text-decoration: underline;
-  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+  cursor: pointer;
   transition: color 0.3s ease;
 }
 

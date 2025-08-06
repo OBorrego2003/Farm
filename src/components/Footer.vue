@@ -7,8 +7,16 @@
       </div>
 
       <div class="footer-contact">
-        <p><strong>Tel:</strong> +52 871 937 7782</p>
-        <p><strong>Email:</strong> fmfarmaciasmarquez@gmail.com</p>
+        <p>
+          <strong>Tel:</strong>
+          <a href="tel:+528719377782" class="footer-link">+52 871 937 7782</a>
+        </p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:fmfarmaciasmarquez@gmail.com" class="footer-link">
+            fmfarmaciasmarquez@gmail.com
+          </a>
+        </p>
       </div>
     </div>
 
@@ -53,20 +61,16 @@ export default {
   color: #c4dafa;
 }
 
-.footer-links a {
-  color: #fcffff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: #84b6f4;
-}
-
 .footer-contact p {
   margin: 0.3rem 0;
   font-size: 0.95rem;
+}
+
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+  cursor: pointer;
 }
 
 .footer-bottom {
