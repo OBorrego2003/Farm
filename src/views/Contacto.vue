@@ -46,7 +46,7 @@ const contactos: Contacto[] = [
   {
     titulo: 'WhatsApp Directo',
     detalle: 'Enviar Mensaje',
-    link: 'https://wa.me/8719377782',
+    link: 'https://wa.me/+528719377782',
     linkTexto: 'Abrir WhatsApp',
   },
 ];
