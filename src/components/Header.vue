@@ -1,14 +1,13 @@
 <template>
   <header class="header">
     <div class="logo">
-      <h1>Farmacia Márquez</h1>
+      <router-link to="/" class="logo-text" @click="cerrarMenu">Farmacia Márquez</router-link>
     </div>
 
     <button class="menu-toggle" @click="abrirMenu">☰</button>
 
     <div v-if="menuAbierto" class="overlay" @click.self="cerrarMenu">
       <nav class="menu-lateral">
-        <router-link to="/" @click="cerrarMenu">Inicio</router-link>
         <router-link to="/servicios" @click="cerrarMenu">Servicios</router-link>
         <router-link to="/ubicacion" @click="cerrarMenu">Ubicación</router-link>
         <router-link to="/sobre-nosotros" @click="cerrarMenu">Sobre Nosotros</router-link>
@@ -45,11 +44,16 @@ function cerrarMenu() {
   z-index: 1002;
 }
 
-.logo h1 {
+.logo-text {
   color: #fcffff;
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo-text:hover {
+  color: #cce6ff;
 }
 
 .menu-toggle {
