@@ -1,4 +1,15 @@
 <template>
+  <div v-if="mostrarModal" class="modal-overlay">
+  <div class="modal-content">
+    <h3>⚠️ Aviso Importante</h3>
+    <p>
+      La automedicación puede ser peligrosa. Consulta siempre a un profesional de salud.
+      Los <strong>antibióticos</strong> solo deben usarse bajo prescripción médica.
+    </p>
+    <button class="cerrar-modal" @click="mostrarModal = false">Entendido</button>
+  </div>
+</div>
+
   <section class="medicamentos">
     <h2 class="titulo">Medicamentos</h2>
 
@@ -34,6 +45,9 @@ interface Medicamento {
   descripcion: string;
   categoria: string;
 }
+
+const mostrarModal = ref(true);
+
 import { onMounted, onUnmounted } from 'vue';
 
 const mostrarBoton = ref(false);
@@ -121,6 +135,83 @@ const filtrados = computed(() =>
 </script>
 
 <style scoped>
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 81, 135, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeInDown 0.5s ease;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 90%;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 81, 135, 0.3);
+  animation: fadeInCard 0.5s ease;
+}
+
+.modal-content h3 {
+  color: #005187;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  color: #4d82bc;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-content strong {
+  font-weight: bold;
+}
+
+.cerrar-modal {
+  background-color: #005187;
+  color: #fcffff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cerrar-modal:hover {
+  background-color: #4d82bc;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  .modal-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .modal-content p {
+    font-size: 0.95rem;
+  }
+
+  .cerrar-modal {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+
 .medicamentos {
   padding: 2rem 1rem;
   background: linear-gradient(to bottom, #fcffff, #c4dafa);
